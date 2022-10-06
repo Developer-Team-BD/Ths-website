@@ -3,9 +3,15 @@ import { Grid, Typography } from "@mui/material";
 
 import Ring from "../assets/Ring.png";
 import SelectedRing from "../assets/SelectedRing.png";
+import { useMediaQuery } from "react-responsive";
 
 const Unstacke = ({ val, ind }) => {
   const [select, setSelect] = useState(false);
+  //Media Quearry
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 950px)" });
+  const isTabletOrxtraMobile = useMediaQuery({ query: "(max-width: 900px)" });
+
+  const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
   return (
     <Grid
       item
@@ -27,8 +33,8 @@ const Unstacke = ({ val, ind }) => {
           background: `url(${val.img}) rgba(85, 69, 69, 0.5)`,
           position: "relative",
           // paddingRight: "10px",
-          width: "150px",
-          height: "165px",
+          width: `${isMobile ? "210px" : "150px"}`,
+          height: `${isMobile ? "235px" : "165px"}`,
           borderTopRightRadius: "30px",
           borderBottomLeftRadius: "30px",
           borderTopLeftRadius: "5px",

@@ -64,7 +64,22 @@ const Navbar = () => {
           >
             Connect Wallet
           </Button> */}
-            <img src={connectWallet} height={"50px"} />
+            <Button
+              style={{
+                background: "#60deff",
+                border: "3px solid #fd89ea",
+                padding: "2px 10px",
+                fontSize: "18px",
+                textTransform: "uppercase",
+                fontWeight: "bold",
+                color: "#000",
+                fontFamily: "",
+                lineHeight: "20px",
+              }}
+            >
+              Connect <br />
+              wallet
+            </Button>
           </Link>
         </Grid>
       </Grid>
