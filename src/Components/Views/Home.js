@@ -51,6 +51,8 @@ const Home = () => {
 
   //Media Quearry
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 950px)" });
+  const isTabletOrxtraMobile = useMediaQuery({ query: "(max-width: 900px)" });
+
   const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
 
   return (
@@ -255,7 +257,7 @@ const Home = () => {
               8x 2x 2x=32 $HRSE daily earnings
             </li>
           </Grid>
-          {!isTabletOrMobile && (
+          {!isTabletOrxtraMobile && (
             <img
               src={Jiraf}
               style={{
