@@ -60,59 +60,31 @@ const Home = () => {
       <div style={{ margin: "30px auto" }}>
         <Paper
           style={{
-            width: "79%",
+            width: "85%",
             display: "flex",
             margin: "0px auto",
             borderRadius: "30px",
-            height: "120px",
-            padding: "20px 30px",
+            padding: "25px 0px",
             background: "rgba(255, 160, 224, 0.3)",
             border: "3px solid rgba(0, 0, 0, 0.12)",
+            alignItems: "center",
+            justifyContent: "space-around",
+            flexDirection: `${isMobile ? "column" : "row"}`,
           }}
         >
-          <Grid container style={{ alignItems: "center" }}>
-            <Grid
-              item
-              md={6}
-              xs={12}
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                padding: `${isMobile ? "0px 10px" : "0px 60px"}`,
-                borderRight: `${
-                  isTabletOrMobile ? "none" : "2px solid rgba(0, 0, 0, 0.26)"
-                }`,
-              }}
-            >
-              <Typography style={{ fontWeight: "700" }}>
-                WALLET HDGfS...
-              </Typography>
-              <div>
-                <Typography style={{ fontWeight: "700" }}>Balance:</Typography>
-                <Typography>5.7855 $hrse</Typography>
-              </div>
-            </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                padding: `${isMobile ? "0px 10px" : "0px 60px"}`,
-              }}
-            >
-              <Typography style={{ fontWeight: "700" }}>
-                Rate: 30.06 / day
-              </Typography>
-              <div>
-                <Typography style={{ fontWeight: "700" }}>Earned:</Typography>
-                <Typography>63.7757 $hrse</Typography>
-              </div>
-            </Grid>
-          </Grid>
+          <div style={{ marginBottom: "10px" }}>
+            <Typography style={{ fontWeight: "700" }}>Balance:</Typography>
+            <Typography>5.7855 $hrse</Typography>
+          </div>
+
+          <Typography style={{ fontWeight: "700", marginBottom: "10px" }}>
+            Rate: 30.06 / day
+          </Typography>
+
+          <div>
+            <Typography style={{ fontWeight: "700" }}>Earned:</Typography>
+            <Typography>63.7757 $hrse</Typography>
+          </div>
         </Paper>
       </div>
       <Grid
@@ -130,7 +102,7 @@ const Home = () => {
             container
             style={{
               width: "97%",
-              margin: "0px auto",
+              // margin: "0px auto",
               background: "rgba(255, 160, 224, 0.3)",
               border: "3px solid rgba(0, 0, 0, 0.1",
               padding: "20px 0px",
@@ -140,25 +112,45 @@ const Home = () => {
             <Grid
               item
               md={12}
+              xs={12}
               display={"flex"}
               justifyContent={"center"}
-              style={{ margin: "15px 0px", padding: "0px 30px" }}
+              style={{
+                margin: "15px 0px",
+                padding: "0px 30px",
+                flexDirection: `${isMobile ? "column" : "row"}`,
+              }}
             >
-              <img
-                src={one}
+              <Button
                 style={{
-                  height: `${isMobile ? "30px" : "45px"}`,
-                  cursor: "pointer",
+                  background: "#60deff",
+                  border: "3px solid #fd89ea",
+                  padding: "0px 10px",
+                  fontSize: "18px",
+                  textTransform: "uppercase",
+                  fontWeight: "bold",
+                  color: "#000",
+                  fontFamily: "",
                 }}
-              />
-              <img
-                src={two}
+              >
+                Stable
+              </Button>
+              <Button
                 style={{
-                  height: `${isMobile ? "30px" : "45px"}`,
-                  marginLeft: "10px",
-                  cursor: "pointer",
+                  background: "#60deff",
+                  border: "3px solid #fd89ea",
+                  padding: "0px 10px",
+                  fontSize: "18px",
+                  textTransform: "uppercase",
+                  fontWeight: "bold",
+                  color: "#000",
+                  fontFamily: "",
+                  marginLeft: `${isMobile ? "0px" : "10px"}`,
+                  marginTop: `${isMobile ? "10px" : "0px"}`,
                 }}
-              />
+              >
+                Stable All
+              </Button>
             </Grid>
             {stakedData.map((val, ind) => {
               return <Stacke val={val} ind={ind} />;
@@ -167,12 +159,12 @@ const Home = () => {
         </Grid>
         {/* Untaked Container */}
 
-        <Grid item md={6} style={{ marginTop: `${isMobile ? "15px" : "0px"}` }}>
+        <Grid item md={6} style={{ marginTop: `${isMobile ? "25px" : "0px"}` }}>
           <Grid
             container
             style={{
               width: "97%",
-              margin: "0px auto",
+              // margin: "0px auto",
               background: "rgba(255, 160, 224, 0.3)",
               border: "3px solid rgba(0, 0, 0, 0.1",
               padding: "20px 0px",
@@ -182,25 +174,61 @@ const Home = () => {
             <Grid
               item
               md={12}
+              xs={12}
               display={"flex"}
               justifyContent={"center"}
-              style={{ margin: "15px 0px", padding: "0px 30px" }}
+              style={{
+                margin: "15px 0px",
+                padding: "0px 30px",
+                flexDirection: `${isMobile ? "column" : "row"}`,
+              }}
             >
-              <img
-                src={three}
+              <Button
                 style={{
-                  height: `${isMobile ? "30px" : "45px"}`,
-                  cursor: "pointer",
+                  background: "#60deff",
+                  border: "3px solid #fd89ea",
+                  padding: "0px 10px",
+                  fontSize: "18px",
+                  textTransform: "uppercase",
+                  fontWeight: "bold",
+                  color: "#000",
+                  fontFamily: "",
                 }}
-              />
-              <img
-                src={four}
+              >
+                Claim HR$E
+              </Button>
+              <Button
                 style={{
-                  height: `${isMobile ? "30px" : "45px"}`,
-                  marginLeft: "10px",
-                  cursor: "pointer",
+                  background: "#60deff",
+                  border: "3px solid #fd89ea",
+                  padding: "0px 10px",
+                  fontSize: "18px",
+                  textTransform: "uppercase",
+                  fontWeight: "bold",
+                  color: "#000",
+                  fontFamily: "",
+                  marginLeft: `${isMobile ? "0px" : "10px"}`,
+                  marginTop: `${isMobile ? "10px" : "0px"}`,
                 }}
-              />
+              >
+                Claim All HR$E
+              </Button>
+              <Button
+                style={{
+                  background: "#60deff",
+                  border: "3px solid #fd89ea",
+                  padding: "0px 10px",
+                  fontSize: "18px",
+                  textTransform: "uppercase",
+                  fontWeight: "bold",
+                  color: "#000",
+                  fontFamily: "",
+                  marginLeft: `${isMobile ? "0px" : "10px"}`,
+                  marginTop: `${isMobile ? "10px" : "0px"}`,
+                }}
+              >
+                Claim
+              </Button>
             </Grid>
             {stakedData.map((val, ind) => {
               return <Unstake val={val} ind={ind} />;

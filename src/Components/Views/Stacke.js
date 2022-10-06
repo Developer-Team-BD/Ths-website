@@ -11,6 +11,7 @@ const Stacke = ({ val, ind }) => {
       item
       lg={4}
       md={6}
+      sm={6}
       xs={12}
       style={{
         display: "flex",
