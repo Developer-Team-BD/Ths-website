@@ -107,6 +107,7 @@ const Home = () => {
               border: "3px solid rgba(0, 0, 0, 0.1",
               padding: "20px 0px",
               borderRadius: "20px",
+              // justifyContent: "space-around",
             }}
           >
             <Grid
@@ -119,6 +120,7 @@ const Home = () => {
                 margin: "15px 0px",
                 padding: "0px 30px",
                 flexDirection: `${isMobile ? "column" : "row"}`,
+                alignItems: "center",
               }}
             >
               <Button
@@ -159,7 +161,7 @@ const Home = () => {
         </Grid>
         {/* Untaked Container */}
 
-        <Grid item md={6} style={{ marginTop: `${isMobile ? "25px" : "0px"}` }}>
+        <Grid item md={6} style={{ marginTop: `${isMobile ? "20px" : "0px"}` }}>
           <Grid
             container
             style={{
@@ -181,6 +183,7 @@ const Home = () => {
                 margin: "15px 0px",
                 padding: "0px 30px",
                 flexDirection: `${isMobile ? "column" : "row"}`,
+                alignItems: "center",
               }}
             >
               <Button

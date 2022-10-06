@@ -15,6 +15,7 @@ const Stacke = ({ val, ind }) => {
   return (
     <Grid
       item
+      xl={3}
       lg={4}
       md={6}
       sm={6}
@@ -33,8 +34,8 @@ const Stacke = ({ val, ind }) => {
           background: `url(${val.img}) rgba(85, 69, 69, 0.5)`,
           position: "relative",
           // paddingRight: "10px",
-          width: `${isMobile ? "210px" : "150px"}`,
-          height: `${isMobile ? "235px" : "165px"}`,
+          width: `${isTabletOrxtraMobile ? "220px" : "150px"}`,
+          height: `${isTabletOrxtraMobile ? "245px" : "165px"}`,
           borderTopRightRadius: "30px",
           borderBottomLeftRadius: "30px",
           borderTopLeftRadius: "5px",
