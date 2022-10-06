@@ -145,14 +145,14 @@ const Home = () => {
               <img
                 src={one}
                 style={{
-                  height: `${isMobile ? "30px" : "50px"}`,
+                  height: `${isMobile ? "30px" : "45px"}`,
                   cursor: "pointer",
                 }}
               />
               <img
                 src={two}
                 style={{
-                  height: `${isMobile ? "30px" : "50px"}`,
+                  height: `${isMobile ? "30px" : "45px"}`,
                   marginLeft: "10px",
                   cursor: "pointer",
                 }}
@@ -187,14 +187,14 @@ const Home = () => {
               <img
                 src={three}
                 style={{
-                  height: `${isMobile ? "30px" : "50px"}`,
+                  height: `${isMobile ? "30px" : "45px"}`,
                   cursor: "pointer",
                 }}
               />
               <img
                 src={four}
                 style={{
-                  height: `${isMobile ? "30px" : "50px"}`,
+                  height: `${isMobile ? "30px" : "45px"}`,
                   marginLeft: "10px",
                   cursor: "pointer",
                 }}
@@ -218,9 +218,10 @@ const Home = () => {
             background: "rgba(255, 160, 224, 0.3)",
             border: "3px solid rgba(0, 0, 0, 0.12)",
             zIndex: "9999",
+            position: "relative",
           }}
         >
-          <Grid item md={12}>
+          <Grid item md={8} xs={12}>
             <Typography
               style={{ color: "#000", fontWeight: "bold", fontSize: "20px" }}
             >
@@ -261,7 +262,7 @@ const Home = () => {
                 position: "absolute",
                 height: "310px",
                 bottom: "3px",
-                right: "70px",
+                right: "-30px",
               }}
             />
           )}
