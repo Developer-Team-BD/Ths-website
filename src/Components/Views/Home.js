@@ -124,7 +124,7 @@ const Home = () => {
               <Button
                 style={{
                   background: "#60deff",
-                  border: "3px solid #fd89ea",
+                  border: "5px solid #fd89ea",
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
@@ -138,7 +138,7 @@ const Home = () => {
               <Button
                 style={{
                   background: "#60deff",
-                  border: "3px solid #fd89ea",
+                  border: "5px solid #fd89ea",
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
@@ -186,7 +186,7 @@ const Home = () => {
               <Button
                 style={{
                   background: "#60deff",
-                  border: "3px solid #fd89ea",
+                  border: "5px solid #fd89ea",
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
@@ -195,12 +195,12 @@ const Home = () => {
                   fontFamily: "",
                 }}
               >
-                Claim HR$E
+                Stop Stabling
               </Button>
               <Button
                 style={{
                   background: "#60deff",
-                  border: "3px solid #fd89ea",
+                  border: "5px solid #fd89ea",
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
@@ -211,12 +211,12 @@ const Home = () => {
                   marginTop: `${isMobile ? "10px" : "0px"}`,
                 }}
               >
-                Claim All HR$E
+                Stop Stabling All
               </Button>
               <Button
                 style={{
                   background: "#60deff",
-                  border: "3px solid #fd89ea",
+                  border: "5px solid #fd89ea",
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
