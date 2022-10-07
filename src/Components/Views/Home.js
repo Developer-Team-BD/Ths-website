@@ -130,9 +130,8 @@ const Home = () => {
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
-                  fontWeight: "bold",
+                  fontWeight: "900",
                   color: "#000",
-                  fontFamily: "",
                 }}
               >
                 Stable
@@ -144,9 +143,8 @@ const Home = () => {
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
-                  fontWeight: "bold",
+                  fontWeight: "900",
                   color: "#000",
-                  fontFamily: "",
                   marginLeft: `${isMobile ? "0px" : "10px"}`,
                   marginTop: `${isMobile ? "10px" : "0px"}`,
                 }}
@@ -193,9 +191,8 @@ const Home = () => {
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
-                  fontWeight: "bold",
+                  fontWeight: "900",
                   color: "#000",
-                  fontFamily: "",
                 }}
               >
                 Stop Stabling
@@ -207,9 +204,8 @@ const Home = () => {
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
-                  fontWeight: "bold",
+                  fontWeight: "900",
                   color: "#000",
-                  fontFamily: "",
                   marginLeft: `${isMobile ? "0px" : "10px"}`,
                   marginTop: `${isMobile ? "10px" : "0px"}`,
                 }}
@@ -223,11 +219,11 @@ const Home = () => {
                   padding: "0px 10px",
                   fontSize: "18px",
                   textTransform: "uppercase",
-                  fontWeight: "bold",
+                  fontWeight: "900",
                   color: "#000",
-                  fontFamily: "",
                   marginLeft: `${isMobile ? "0px" : "10px"}`,
                   marginTop: `${isMobile ? "10px" : "0px"}`,
+                  // fontFamily: "Borsok Regular",
                 }}
               >
                 Claim
